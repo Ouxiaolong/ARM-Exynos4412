@@ -1,0 +1,11 @@
+printf将已经格式化好的buffer通过puts函数打印到串口
+因此，必须实现函数puts
+
+
+printf(){
+	unsigned char printbuf[1024];
+	... // 格式化控制解析
+
+	// 通过串口终端打印
+	puts(printbuf);
+}
