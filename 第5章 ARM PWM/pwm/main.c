@@ -1,4 +1,13 @@
-// Exynos-4412 
+/**
+  ******************************************************************************
+  * @file    main.c
+  * @author  Bruceou
+  * @version V1.0
+  * @date    2018-2
+  * @brief   This example describes how to use PWM conversion
+  ******************************************************************************
+  */
+/**Includes*********************************************************************/
 #include "led.h"
 #include "pwm.h"
 #include "beep.h"

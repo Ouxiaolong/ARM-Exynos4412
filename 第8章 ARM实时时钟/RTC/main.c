@@ -1,14 +1,15 @@
-/*
- *@brief	This example describes how to use RTC function
- *@date:	12. June. 2014
- *@author	liujh@farsight.com.cn
- *@Contact 	Us: http://dev.hqyj.com
- *Copyright(C) 2014, Farsight
-*/
-
+/**
+  ******************************************************************************
+  * @file    main.c
+  * @author  Bruceou
+  * @version V1.0
+  * @date    2018-2
+  * @brief   This example describes how to use RTC function
+  ******************************************************************************
+  */
+/**Includes*********************************************************************/
 #include "exynos_4412.h"
 #include "uart.h"
-
 
 /*
  * Irq_rutine
@@ -17,12 +18,11 @@ void do_irq() {
 
 }
 
-
-/**********************************************************************
- * @brief		mydelay_ms program body
- * @param[in]	int (ms)
- * @return 		None
- **********************************************************************/
+/**
+  * @brief		mydelay_ms program body
+  * @param[in]	int (ms)
+  * @return 		None
+  */
 void mydelay_ms(int time)
 {
 	int i, j;
@@ -33,11 +33,11 @@ void mydelay_ms(int time)
 	}
 }
 
-/**********************************************************************
- * @brief		RTC_init, second, minute, hour, day, week, month, year
- * @param[in]	None
- * @return 		None
- **********************************************************************/
+/**
+  * @brief		RTC_init, second, minute, hour, day, week, month, year
+  * @param[in]	None
+  * @return 		None
+  */
 void RTC_init()
 {
 	RTCCON = 0x1;	// Enables RTC control
@@ -55,11 +55,11 @@ void RTC_init()
 }
 
 /*-------------------------MAIN FUNCTION------------------------------*/
-/**********************************************************************
- * @brief		Main program body
- * @param[in]	None
- * @return 		int
- **********************************************************************/
+/**
+  * @brief		Main program body
+  * @param[in]	None
+  * @return 		int
+  */
 int main(void)
 {
 	GPX2.CON = 0x1 << 28;

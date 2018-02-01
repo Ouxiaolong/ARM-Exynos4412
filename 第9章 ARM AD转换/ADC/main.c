@@ -1,11 +1,13 @@
-/*
- *@brief	This example describes how to use ADC conversion
- *@date:	12. June. 2014
- *@author	liujh@farsight.com.cn
- *@Contact 	Us: http://dev.hqyj.com
- *Copyright(C) 2014, Farsight
-*/
-
+/**
+  ******************************************************************************
+  * @file    main.c
+  * @author  Bruceou
+  * @version V1.0
+  * @date    2018-2
+  * @brief   This example describes how to use ADC conversion
+  ******************************************************************************
+  */
+/**Includes*********************************************************************/
 #include "exynos_4412.h"
 #include "uart.h"
 
@@ -14,11 +16,11 @@
  * */
 //#define __READ_START_
 
-/**********************************************************************
+/*
  * @brief		mydelay_ms program body
  * @param[in]	int (ms)
  * @return 		None
- **********************************************************************/
+ */
 void mydelay_ms(int time)
 {
 	int i, j;
@@ -30,11 +32,11 @@ void mydelay_ms(int time)
 }
 
 /*-------------------------MAIN FUNCTION------------------------------*/
-/**********************************************************************
+/*
  * @brief		Main program body
  * @param[in]	None
  * @return 		int
- **********************************************************************/
+ */
 int main(void)
 {
 	unsigned int  temp_adc = 0, temp_mv;
